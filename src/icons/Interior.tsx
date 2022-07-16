@@ -1,13 +1,5 @@
 import SvgContainer from '@/components/SvgContainer';
-
-interface IIcon {
-  height?: string | number
-  width?: string | number
-  color?: string
-  className?: string
-  style?: any
-  viewBox?: string
-}
+import { IIcon } from '@/types';
 
 const IconInterior = (props: IIcon) => {
   return (
