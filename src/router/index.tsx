@@ -1,12 +1,12 @@
 import { useRoutes } from "react-router-dom";
-import { Main } from '@/pages/Main'
+import { Home } from '@/pages/Home'
 import { About } from '@/pages/About'
 
 export default function Router() {
   const routes = useRoutes([
     {
         path: '/',
-        element: <Main />,
+        element: <Home />,
     },
     {
         path: '/about',
