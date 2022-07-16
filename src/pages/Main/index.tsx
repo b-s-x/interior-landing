@@ -1,15 +1,12 @@
-import InteriorIcon from '@/icons/Interior';
+import React from "react";
 import styles from './Main.module.scss';
+import Header from '@/components/Header';
 
 export const Main = () => {
 
   return (
     <div>
-      <InteriorIcon
-        // color="blue"
-        className={styles.icon_interior}
-      />
+      <Header />
     </div>
   )
 };
-
