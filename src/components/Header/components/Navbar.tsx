@@ -1,67 +1,43 @@
-import React from "react";
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { paths } from '@/constants/routes';
+import navMap from '@/constants/navMap';
 import styles from './Navbar.module.scss';
+import Hamburger from "@/components/Hamburger";
 
 const NavBar = () => {
+  const [isMenuOpen, toggleMenu] = useState(false);
+  const handleBurgerToggle = () => toggleMenu(!isMenuOpen);
+
   return (
-    <nav className={styles.nav}>
-      <NavLink
-        to={ paths.home }
-        className={({ isActive }) =>
-          [
-            styles.link,
-            isActive ? styles.link_active : null,
-          ].join(" ")
-        }
+    <>
+      <nav className={styles.nav}>
+        {navMap.map(({ paths, title }) => {
+          return (
+            <NavLink
+              to={paths}
+              key={title}
+              className={({ isActive }) =>
+                [
+                  styles.link,
+                  isActive ? styles.link_active : null,
+                ].join(" ")
+              }
+            >
+              {title}
+            </NavLink>
+          )
+        })}
+      </nav>
+
+      <button
+        className={styles.button}
+        onClick={handleBurgerToggle}
       >
-        Home
-      </NavLink>
-      <NavLink
-        to={ paths.about }
-        className={({ isActive }) =>
-          [
-            styles.link,
-            isActive ? styles.link_active : null,
-          ].join(" ")
-        }
-      >
-        About Us
-      </NavLink>
-      <NavLink
-        to={ paths.services }
-        className={({ isActive }) =>
-          [
-            styles.link,
-            isActive ? styles.link_active : null,
-          ].join(" ")
-        }
-      >
-        Services
-      </NavLink>
-      <NavLink
-        to={ paths.pages }
-        className={({ isActive }) =>
-          [
-            styles.link,
-            isActive ? styles.link_active : null,
-          ].join(" ")
-        }
-      >
-        Pages
-      </NavLink>
-      <NavLink
-        to={ paths.contacts }
-        className={({ isActive }) =>
-          [
-            styles.link,
-            isActive ? styles.link_active : null,
-          ].join(" ")
-        }
-      >
-        Contact Us
-      </NavLink>
-    </nav>
+        <Hamburger
+          isActive={isMenuOpen}
+        />
+      </button>
+    </>
   )
 }
 
