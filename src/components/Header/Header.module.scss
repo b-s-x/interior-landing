@@ -1,10 +1,23 @@
 @import '@common';
 
 .icon_interior {
-  fill: $color-primary
+  fill: $color-primary;
+  margin-right: 10px;
 }
 
 .header {
   border: thin solid black;
   padding: 26px 120px 18px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'DM Serif Display';
+
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: 34px;
+  }
 }
