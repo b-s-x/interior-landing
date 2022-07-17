@@ -18,4 +18,12 @@
   *:not(:last-child) {
     margin-right: 40px;
   }
+
+  @media (max-width: $breakpoint930px) {
+    display: none;
+  }
+}
+
+.button {
+  @extend %reset-button;
 }
