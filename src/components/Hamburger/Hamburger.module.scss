@@ -1,0 +1,48 @@
+@import '@common';
+
+.burger {
+  margin: 20px auto;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger span {
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.burger span:first-child {
+  top: 0;
+}
+
+.burger span:nth-child(2) {
+  top: 6px;
+}
+
+.burger span:last-child {
+  top: 12px;
+}
+
+.burger_active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger_active span:first-child,
+.burger_active span:last-child {
+  top: 6px;
+  background-color: $color-primary;
+}
+
+.burger_active span:first-child {
+  transform: rotate(45deg);
+}
+
+.burger_active span:last-child {
+  transform: rotate(-45deg);
+}
