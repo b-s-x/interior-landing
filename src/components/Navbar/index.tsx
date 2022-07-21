@@ -10,14 +10,15 @@ const NavBar = () => {
   const width = useCurrentWidth();
 
   const handleBurgerToggle = () => toggleMenu(!isMenuOpen);
-  const isMobileWidth = width > 930;
+  const isMobileWidth = width <= 930;
 
   return (
     <>
       <nav className={
         [
-          isMobileWidth ? styles.nav : styles.nav_not_active,
-          isMenuOpen && styles.nav_active,
+          !isMobileWidth && styles.nav,
+          (isMenuOpen && isMobileWidth) && styles.nav_active,
+          (!isMenuOpen && isMobileWidth) && styles.nav_not_active
         ].join(" ")
       }>
         {navMap.map(({ paths, title }) => {
