@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import navMap from '@/constants/navMap';
 import styles from './Navbar.module.scss';
