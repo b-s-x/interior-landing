@@ -20,4 +20,8 @@
   &_title {
     font-size: 34px;
   }
+
+  @media (max-width: $breakpoint620px) {
+    padding: 26px 10px 18px;
+  }
 }
