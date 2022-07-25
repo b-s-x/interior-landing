@@ -1,12 +1,4 @@
-interface IIcon {
-  height: string | number
-  width: string | number
-  color: string
-  className: string
-  style: any
-  viewBox: string
-  children: React.ReactNode
-}
+import { IIcon } from "@/types";
 
 const SvgContainer = ({
   width,
