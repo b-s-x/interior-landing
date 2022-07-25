@@ -16,9 +16,9 @@ const NavBar = () => {
     <>
       <nav className={
         [
-          !isMobileWidth && styles.nav,
-          (isMenuOpen && isMobileWidth) && styles.nav_active,
-          (!isMenuOpen && isMobileWidth) && styles.nav_not_active
+          !isMobileWidth ? styles.nav : null,
+          (isMenuOpen && isMobileWidth) ? styles.nav_active : null,
+          (!isMenuOpen && isMobileWidth) ? styles.nav_not_active : null,
         ].join(" ")
       }>
         {navMap.map(({ paths, title }) => {
@@ -29,9 +29,10 @@ const NavBar = () => {
               className={({ isActive }) =>
                 [
                   styles.link,
-                  isActive && styles.link_active,
+                  isActive ? styles.link_active : null,
                 ].join(" ")
               }
+              onClick={handleBurgerToggle}
             >
               {title}
             </NavLink>
@@ -43,9 +44,7 @@ const NavBar = () => {
         className={styles.button}
         onClick={handleBurgerToggle}
       >
-        <Hamburger
-          isActive={isMenuOpen}
-        />
+        <Hamburger isActive={isMenuOpen} />
       </button>
     </>
   )
