@@ -3,6 +3,7 @@ export interface IIcon {
   width?: string | number
   color?: string
   className?: string
-  style?: any
+  style?: object,
   viewBox?: string
+  children?: React.ReactNode,
 }
