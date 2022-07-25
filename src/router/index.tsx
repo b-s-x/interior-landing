@@ -7,7 +7,7 @@ import { Contacts } from '@/pages/Contacts'
 import { paths } from '@/constants/routes';
 
 export default function Router() {
-  const routes = useRoutes([
+  return useRoutes([
     {
       path: paths.home,
       element: <Home />,
@@ -29,6 +29,4 @@ export default function Router() {
       element: <Contacts />,
     },
   ]);
-
-  return routes;
-}
+};
