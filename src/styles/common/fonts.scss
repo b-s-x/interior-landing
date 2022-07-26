@@ -9,3 +9,10 @@
   font-style: normal;
   src: url('@/assets/fonts/Jost-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'JostLight';
+  font-style: normal;
+  font-weight: light;
+  src: url('@/assets/fonts/Jost-Light.woff2') format('truetype');
+}
