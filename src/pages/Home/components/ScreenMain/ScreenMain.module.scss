@@ -14,7 +14,7 @@
     position: absolute;
     top: 22%;
     left: 12%;
-    width: 595px;
+    max-width: 595px;
   }
 
   &_top {
@@ -37,4 +37,41 @@
 
 .btn {
   margin-top: 32px;
+}
+
+@media (max-width: $breakpoint930px) {
+  .content {
+    &_container {
+      max-width: 395px;
+    }
+
+    &_top {
+      font-size: 42px;
+      line-height: 46px;
+    }
+
+    &_bottom {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint620px) {
+  .content {
+    &_container {
+      max-width: 288px;
+    }
+
+    &_top {
+      font-size: 38px;
+      line-height: 42px;
+    }
+
+    &_bottom {
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 28px;
+    }
+  }
 }
