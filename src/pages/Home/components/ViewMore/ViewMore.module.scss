@@ -1,6 +1,15 @@
+@import '@common';
+
 .container {
   margin: 100px 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $breakpoint620px) {
+  .container  {
+    margin: 0;
+  }
 }
