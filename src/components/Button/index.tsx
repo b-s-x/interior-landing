@@ -7,16 +7,15 @@ interface IBtn {
   color?: Color
   iconColor?: Color
   className?: string
-  handleClick: Function
+  onClick: () => void
 }
 
-export const Button = ({ children, color, iconColor, className, handleClick }: IBtn) => {
-
+export const Button = ({ children, color, iconColor, className, onClick }: IBtn) => {
   return (
     <button
       className={`${styles.btn} ${className}`}
       style={{ 'backgroundColor': color || Color.Black }}
-      onClick={() => handleClick()}
+      onClick={onClick}
     >
       <div className={styles.btn_title}>
         {children}
