@@ -8,3 +8,9 @@ export interface IIcon {
   children?: React.ReactNode
   params?: object
 };
+
+export interface IDataViewMore {
+  id: number
+  title: string
+  content: string
+}
