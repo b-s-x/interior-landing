@@ -1,7 +1,7 @@
 import SvgContainer from '@/components/SvgContainer';
 import { IIcon } from '@/types';
 
-const IconInterior = (props: IIcon) => {
+const IconArrow = (props: IIcon) => {
   return (
     <SvgContainer {...props}>
       <path
@@ -16,4 +16,4 @@ const IconInterior = (props: IIcon) => {
   )
 }
 
-export default IconInterior;
+export default IconArrow;
