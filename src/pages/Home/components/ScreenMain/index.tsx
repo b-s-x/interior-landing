@@ -23,7 +23,7 @@ export const ScreenMain = () => {
 
         <Button
           className={styles.btn}
-          handleClick={handleClick}
+          onClick={handleClick}
         >
           Get Started
         </Button>
