@@ -1,0 +1,23 @@
+@import '@common';
+
+.btn {
+  @extend %reset-button;
+  cursor: pointer;
+  border-radius: 16px;
+  color: $color-white;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &_title {
+    margin-right: 30px;
+  }
+
+  &_icon {
+    position: absolute;
+    top: 17%;
+    right: 9%;
+  }
+}
