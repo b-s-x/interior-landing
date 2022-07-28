@@ -10,7 +10,7 @@ export interface IIcon {
 };
 
 export interface IDataViewMore {
-  id: number
+  id?: number
   title: string
   content: string
 }
