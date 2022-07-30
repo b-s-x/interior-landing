@@ -10,6 +10,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: .7s;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: .7s;
+  }
 
   &_title {
     margin-right: 30px;
