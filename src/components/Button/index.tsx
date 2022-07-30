@@ -7,7 +7,7 @@ interface IBtn {
   color?: Color
   iconColor?: Color
   className?: string
-  onClick: () => void
+  onClick?: () => void
 }
 
 export const Button = ({ children, color, iconColor, className, onClick }: IBtn) => {
