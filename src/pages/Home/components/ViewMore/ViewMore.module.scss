@@ -1,7 +1,7 @@
 @import '@common';
 
 .container {
-  margin: 100px 120px;
+  @extend %landing-wrapper;
   display: flex;
   align-items: center;
   justify-content: center;
