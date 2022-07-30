@@ -1,0 +1,19 @@
+@import '@common';
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.around {
+  @extend %around-icon;
+  width: 93px;
+  height: 93px;
+}
+
+.content {
+  font-family: 'JostLight';
+  font-size: 20px;
+  line-height: 36px;
+  margin-left: 20px;
+}
