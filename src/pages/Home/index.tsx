@@ -1,5 +1,6 @@
 import { ScreenMain } from "./components/ScreenMain";
 import { ViewMore } from "./components/ViewMore";
+import { ScreenInfo } from "./components/ScreenInfo";
 import styles from './Home.module.scss';
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
     <div>
       <ScreenMain />
       <ViewMore />
+      <ScreenInfo />
     </div>
   )
 };
