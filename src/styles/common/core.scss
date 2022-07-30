@@ -24,3 +24,10 @@
   margin: 100px 120px;
 }
 
+%around-icon {
+  background-color: $color-gray-light-100;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
