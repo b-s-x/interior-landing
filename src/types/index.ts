@@ -14,3 +14,13 @@ export interface IDataViewMore {
   title: string
   content: string
 }
+
+export interface IDataPeopleAboutInfo {
+  id?: number
+  avatar: string
+  name: string
+  surname: string
+  city: string
+  country: string
+  content: string
+}
