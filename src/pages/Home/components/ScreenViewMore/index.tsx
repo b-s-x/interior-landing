@@ -4,7 +4,7 @@ import { IDataViewMore }from '@/types';
 import { ViewMoreCard } from './ViewMoreCard';
 import styles from './ViewMore.module.scss';
 
-export const ViewMore = () => {
+export const ScreenViewMore = () => {
   const [dataViewMore, setDataViewMore] = useState<IDataViewMore[]>([]);
   const fetchDataViewMore = async () => {
     const data: IDataViewMore[] = await api.home.getViewMore();
