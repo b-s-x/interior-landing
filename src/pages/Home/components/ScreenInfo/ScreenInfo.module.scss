@@ -12,9 +12,9 @@
   }
 
   &_img {
-    min-width: 600px;
+    min-width: 500px;
     max-width: 900px;
-    height: 800px;
+    height: 600px;
     width: 50%;
 
     & img {
@@ -53,15 +53,17 @@
   border-radius: 0 326px 0 123px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1240px) {
   .container {
     flex-direction: column;
     height: 100%;
     align-items: center;
+    margin: 0 120px;
 
     &_content {
       width: 100%;
       text-align: center;
+      padding-top: 0;
     }
 
     &_img {
@@ -82,7 +84,6 @@
     &_operations {
       flex-direction: row;
       align-items: center;
-      height: auto;
       justify-content: space-evenly;
       flex-wrap: wrap;
     }
@@ -102,10 +103,6 @@
 
     &_text {
       font-size: 22px;
-    }
-
-    &_call {
-      margin-bottom: 40px;
     }
   }
 }
