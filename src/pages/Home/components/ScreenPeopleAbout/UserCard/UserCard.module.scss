@@ -1,0 +1,43 @@
+@import '@common';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: 45px 75px 45px 35px;
+  border-radius: 30px;
+  max-width: 354px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  &_info {
+    margin-left: 20px;
+  }
+
+  &_name {
+    font-family: 'DM Serif Display';
+    font-size: 25px;
+  }
+
+  &_place {
+    font-family: 'JostLight';
+    font-size: 18px;
+    margin-top: 7px;
+  }
+}
+
+.content {
+  font-family: 'JostLight';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+.avatar {
+  border-radius: 50%;
+}
