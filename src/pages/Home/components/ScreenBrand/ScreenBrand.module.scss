@@ -1,0 +1,9 @@
+@import '@common';
+
+.container {
+  @extend %landing-wrapper;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
