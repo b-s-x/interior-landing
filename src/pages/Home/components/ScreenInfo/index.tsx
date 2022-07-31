@@ -16,13 +16,16 @@ export const ScreenInfo = () => {
         <div className={styles.content_text}>
           {TEXT}
         </div>
-        <div className={styles.content_call}>
-          <PhoneCard />
-        </div>
-        <div className={styles.content_btn}>
-          <Button>
-            Get Free Estimate
-          </Button>
+        <div className={styles.content_operations}>
+          <PhoneCard
+            className={styles.content_call}
+          />
+
+          <div className={styles.content_btn}>
+            <Button>
+              Get Free Estimate
+            </Button>
+          </div>
         </div>
       </div>
       <div className={styles.container_img}>
