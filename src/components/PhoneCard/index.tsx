@@ -2,9 +2,9 @@ import styles from './PhoneCard.module.scss';
 import IconPhone from '@/icons/Phone';
 import { Color } from '@/types/enums';
 
-export const PhoneCard = () => {
+export const PhoneCard = ({ className }: { className: string }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`}>
       <span className={styles.around}>
         <IconPhone
           width={34}
