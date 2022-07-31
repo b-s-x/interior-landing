@@ -29,6 +29,7 @@ export const ScreenInfo = () => {
         <img
           src={ImgScreenInfo}
           alt="ImgScreenInfo"
+          className={styles.img}
         />
       </div>
     </div>
