@@ -20,9 +20,31 @@
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
   margin-top: 45px;
+  width: 100%;
+}
+
+@media (max-width: 766px) {
+  .container {
+    margin: 100px 20px;
+  }
+}
+
+@media (max-width: 572px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .cards {
+    margin-top: 20px;
+  }
 }
