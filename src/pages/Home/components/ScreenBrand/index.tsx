@@ -22,6 +22,7 @@ export const ScreenBrand = () => {
             src={brand}
             alt={brand}
             key={brand}
+            className={styles.img}
           />
         )
       })}
