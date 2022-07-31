@@ -1,5 +1,5 @@
 import { ScreenMain } from "./components/ScreenMain";
-import { ViewMore } from "./components/ViewMore";
+import { ScreenViewMore } from "./components/ScreenViewMore";
 import { ScreenInfo } from "./components/ScreenInfo";
 import { ScreenPeopleAbout } from "./components/ScreenPeopleAbout";
 import { ScreenBrand } from "./components/ScreenBrand";
@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <div>
       <ScreenMain />
-      <ViewMore />
+      <ScreenViewMore />
       <ScreenInfo />
       <ScreenPeopleAbout />
       <ScreenBrand />
