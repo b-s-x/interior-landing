@@ -1,4 +1,4 @@
-import ImgMain from '@/assets/img/main.jpg';
+import ImgMain from '@/assets/img/ImageMain.jpg';
 import Button from '@/components/Button';
 import styles from './ScreenMain.module.scss';
 
