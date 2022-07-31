@@ -15,5 +15,35 @@ export const mocks = {
       title: 'Flooring',
       content: 'Thin object any finished material applied over a floor structure to provide a walking surface.',
     },
-  ]
-}
+  ],
+
+  screenPeopleAbout: [
+    {
+      id: 1,
+      avatar: '/users/user1.jpg',
+      name: 'Lisa',
+      surname: 'Clairton',
+      city: 'New York',
+      country: 'USA',
+      content: 'We selected Interno interior because of rigorous design background & education.',
+    },
+    {
+      id: 2,
+      avatar: '/users/user2.jpg',
+      name: 'David',
+      surname: 'Knight',
+      city: 'Sydney',
+      country: 'Australia',
+      content: 'The team exceeded our expectations and emerged as leaders of our project’s.',
+    },
+    {
+      id: 3,
+      avatar: '/users/user3.jpg',
+      name: 'Anna',
+      surname: 'Shepard',
+      city: 'Paris',
+      country: 'France',
+      content: 'They balanced the architectural vision and the project realities beautifully.',
+    },
+  ],
+};
