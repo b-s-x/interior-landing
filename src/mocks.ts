@@ -46,4 +46,38 @@ export const mocks = {
       content: 'They balanced the architectural vision and the project realities beautifully.',
     },
   ],
+  recentProjects: [
+    {
+      id: 1,
+      url: '',
+      img: '/images/img_001.jpg',
+      categoryId: 1,
+      category: 'Art Modern',
+      name: 'Winery Dry Creek Building',
+    },
+    {
+      id: 2,
+      url: '',
+      img: '/images/img_002.jpg',
+      categoryId: 2,
+      category: 'Minimalist',
+      name: 'Creative Workplace Design',
+    },
+    {
+      id: 3,
+      url: '',
+      img: '/images/img_003.jpg',
+      categoryId: 3,
+      category: 'Art Modern',
+      name: 'Winery Dry Creek Building',
+    },
+    {
+      id: 4,
+      url: '',
+      img: '/images/img_004.jpg',
+      categoryId: 4,
+      category: 'Art Modern',
+      name: 'Winery Dry Creek Building',
+    },
+  ]
 };
