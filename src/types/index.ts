@@ -24,3 +24,12 @@ export interface IDataPeopleAboutInfo {
   country: string
   content: string
 }
+
+export interface IRecentProjects {
+  id?: number
+  url?: string
+  img: string
+  categoryId?: number
+  category: string
+  name: string
+}
