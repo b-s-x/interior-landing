@@ -22,7 +22,7 @@ export const ScreenPeopleAbout = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        What the People Thinks About Interier
+        What the People Thinks About Interior
       </div>
 
       <div className={styles.cards}>
