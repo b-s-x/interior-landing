@@ -1,0 +1,48 @@
+@import '@common';
+
+.container {
+  @extend %landing-wrapper;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 700px;
+  }
+}
+
+.content {
+  &_title {
+    font-family: 'DM Serif Display';
+    font-size: 47px;
+    line-height: 62px;
+    letter-spacing: .22px;
+    margin-bottom: 20px;
+  }
+
+  &_text {
+    font-family: 'JostLight';
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 500px));
+  gap: 60px 20px;
+  justify-content: center;
+}
+
+@media (max-width: 660px) {
+  .container {
+    margin: 20px;
+  }
+}
