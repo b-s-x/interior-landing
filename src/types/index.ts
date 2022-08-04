@@ -33,3 +33,11 @@ export interface IRecentProjects {
   category: string
   name: string
 }
+
+export interface IRecentBlogs {
+  id?: number
+  category: string
+  title: string
+  date: string
+  img: string,
+}
