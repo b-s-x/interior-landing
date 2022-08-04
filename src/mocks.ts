@@ -79,5 +79,49 @@ export const mocks = {
       category: 'Art Modern',
       name: 'Winery Dry Creek Building',
     },
+  ],
+  recentBlogs: [
+    {
+      id: 1,
+      category: 'Kitchen Design',
+      title: 'Residential Interior Designer In New York, USA',
+      date: 'November 23, 2021',
+      img: '/images/img_005.jpg',
+    },
+    {
+      id: 2,
+      category: 'Living Room',
+      title: 'How To Choose The Best Wall Art & Decor House?',
+      date: 'November 23, 2021',
+      img: '/images/img_006.jpg',
+    },
+    {
+      id: 3,
+      category: 'Minimalist Interior',
+      title: 'Tips To Increase The Interior Value Of Your House',
+      date: 'November 23, 2021',
+      img: '/images/img_007.jpg',
+    },
+    {
+      id: 4,
+      category: 'Kitchen Design',
+      title: 'Best Solution For Any Office & Business Interior',
+      date: 'November 23, 2021',
+      img: '/images/img_008.jpg',
+    },
+    {
+      id: 5,
+      category: 'Living Room',
+      title: 'Get Solution For Building Construction Work',
+      date: 'November 23, 2021',
+      img: '/images/img_009.jpg',
+    },
+    {
+      id: 6,
+      category: 'Minimalist Interior',
+      title: 'Attain The Best Finish For The Kitchen Cabinets',
+      date: 'November 23, 2021',
+      img: '/images/img_010.jpg',
+    },
   ]
 };
