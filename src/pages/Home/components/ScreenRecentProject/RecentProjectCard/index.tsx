@@ -30,18 +30,18 @@ export const RecentProjectCard = ({
             {category}
           </div>
         </div>
-        <div>
-          <button
-            className={styles.button}
-            onClick={onClick}
-          >
-            <IconChevronRight
-              height={16}
-              width={9}
-              color={Color.Black}
-            />
-          </button>
-        </div>
+
+        <button
+          className={styles.button}
+          onClick={onClick}
+        >
+          <IconChevronRight
+            height={16}
+            width={9}
+            color={Color.Black}
+          />
+        </button>
+
       </div>
     </div>
   )
