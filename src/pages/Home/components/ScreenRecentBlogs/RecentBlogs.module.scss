@@ -1,0 +1,53 @@
+@import '@common';
+
+.container {
+  @extend %landing-wrapper;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &_content {
+    margin-bottom: 20px;
+  }
+
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    gap: 20px
+  }
+ }
+
+.title {
+  font-family: 'DM Serif Display';
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: 'JostLight';
+  font-size: 22px;
+  line-height: 33px;
+  max-width: 600px;
+}
+
+@media (max-width: 979px) {
+  .container {
+    &_cards {
+      grid-template-columns: 400px;
+      place-content: center;
+    }
+  }
+}
+
+@media (max-width: 584px) {
+  .container {
+    margin: 20px;
+
+    &_cards {
+      grid-template-columns: minmax(300px, 1fr);
+    }
+  }
+}

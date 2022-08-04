@@ -1,0 +1,56 @@
+@import '@common';
+
+.card {
+  padding: 21px;
+  border: thin solid $color-gray-light-200;
+  border-radius: 62px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  border-radius: 45px 45px 0 0;
+
+  &_container {
+    position: relative;
+    height: 300px;
+  }
+}
+
+.title {
+  font-family: 'DM Serif Display';
+  font-size: 25px;
+  line-height: 35px;
+  text-align: start;
+  margin-top: 15px;
+}
+
+.date {
+  font-family: 'JostLight';
+  font-size: 16px;
+  line-height: 24px;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+}
+
+.button {
+  @extend %reset-button;
+  @extend %around-icon;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.category {
+  position: absolute;
+  bottom: 11%;
+  left: 6%;
+  background-color: $color-white;
+  padding: 10px;
+  border-radius: 8px 8px 8px 0;
+  font-family: 'JostLight';
+}
