@@ -12,8 +12,13 @@ export const getRecentProjects = () => {
   return mocks.recentProjects;
 }
 
+export const getRecentBlogs = () => {
+  return mocks.recentBlogs;
+}
+
 export default {
   getViewMore,
   getPeopleAboutInfo,
   getRecentProjects,
+  getRecentBlogs,
 };
