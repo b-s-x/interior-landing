@@ -6,6 +6,7 @@ import { ScreenBrand } from "./components/ScreenBrand";
 import { ScreenRecentProject } from "./components/ScreenRecentProject";
 import { ScreenAchievements } from "./components/ScreenAchievements";
 import { ScreenRecentBlogs } from "./components/ScreenRecentBlogs";
+import { ScreenJoin } from "./components/ScreenJoin";
 import styles from './Home.module.scss';
 
 export const Home = () => {
@@ -19,6 +20,7 @@ export const Home = () => {
       <ScreenRecentProject />
       <ScreenAchievements />
       <ScreenRecentBlogs />
+      <ScreenJoin />
     </>
   )
 };
