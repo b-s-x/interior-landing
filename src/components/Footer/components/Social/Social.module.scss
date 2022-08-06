@@ -1,0 +1,14 @@
+@import '@common';
+
+.icon {
+  fill: $color-black-300;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+  & .icon {
+    margin-right: 35px;
+  }
+}

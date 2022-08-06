@@ -1,0 +1,22 @@
+@import '@common';
+
+.title {
+  font-family: 'DM Serif Display';
+  font-size: 25px;
+}
+
+.link {
+  font-family: 'JostLight';
+  font-size: 22px;
+  padding-bottom: 28px;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

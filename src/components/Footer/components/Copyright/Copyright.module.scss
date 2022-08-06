@@ -1,0 +1,12 @@
+@import '@common';
+
+.container {
+  border-top: $color-gray-light-200 solid thin;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.gold {
+  color: $color-primary;
+  margin: 0 5px;
+}

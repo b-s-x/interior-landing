@@ -1,0 +1,12 @@
+@import '@common';
+
+.container {
+  @extend %landing-wrapper;
+
+  display: flex;
+  justify-content: space-between;
+
+  &_links {
+    display: flex;
+  }
+}

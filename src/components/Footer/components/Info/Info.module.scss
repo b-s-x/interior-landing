@@ -1,0 +1,22 @@
+@import '@common';
+
+.title {
+  font-family: 'DM Serif Display';
+  font-size: 34px;
+}
+
+.text {
+  font-family: 'JostLight';
+  font-size: 22px;
+  width: 326px;
+  margin: 16px 0 20px;
+}
+
+.icon {
+  margin-right: 16px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
