@@ -6,7 +6,7 @@ export const ScreenJoin = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        Wanna join the interno?
+        Wanna join the interier?
       </div>
       <div className={styles.text}>
         Contact Us & Get a Free Consultation
