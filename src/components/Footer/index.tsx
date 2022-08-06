@@ -9,13 +9,15 @@ import styles from './Footer.module.scss';
 export const Footer = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.footer}>
         <div>
           <Info />
           <Social />
         </div>
-        <Pages />
-        <Explore />
+        <div className={styles.footer_links}>
+          <Pages />
+          <Explore />
+        </div>
         <Contact />
       </div>
       <Copyright />

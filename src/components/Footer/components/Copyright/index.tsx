@@ -2,7 +2,7 @@ import styles from './Copyright.module.scss';
 
 export const Copyright = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.copyright}>
       Copyright © Interno | Designed by
       <span className={styles.gold}>
         Victorflow

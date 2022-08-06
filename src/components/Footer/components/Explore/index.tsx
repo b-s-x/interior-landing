@@ -3,7 +3,7 @@ import styles from './Explore.module.scss';
 
 export const Explore = () => {
   return (
-    <div>
+    <div className={styles.explore}>
       <div className={styles.title}>
         Explore
       </div>

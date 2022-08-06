@@ -6,7 +6,7 @@ import styles from './Social.module.scss';
 
 export const Social = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.social}>
       <IconFacebook
         width={10}
         height={19}

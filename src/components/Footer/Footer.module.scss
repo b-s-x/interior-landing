@@ -1,12 +1,27 @@
 @import '@common';
 
-.container {
+.footer {
   @extend %landing-wrapper;
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
 
   &_links {
     display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 666px) {
+  .footer {
+    margin: 70px 20px 40px 20px;
+    justify-content: center;
+
+    &_links {
+      justify-content: space-between;
+    }
   }
 }
